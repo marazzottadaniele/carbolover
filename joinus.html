@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://getbootstrap.com/docs/5.2/assets/css/docs.css"
+      rel="stylesheet"
+    />
+
+    <!-- FAVICON -->
+    <link rel="icon" href="./assets/logo/favicon.png" />
+
+    <!-- FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Gothic&family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- ANGULAR e ANIMAZIONI -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+
+    <!-- JQUERY -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <title>Carbolover</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body ng-app="myApp" ng-controller="validazioneJoinus">
+    <header>
+      <a href="#main" class="skip">Skip to main content</a>
+      <nav class="navbar titolo testo-medio">
+        <div class="container-fluid">
+          <ul class="navbar__menu" role="menu">
+            <li role="menuitem"><a href="booking.html" >PRENOTA</a></li>
+            <li role="menuitem"><a href="menu.html">MENU</a></li>
+            <li id="logo" role="menuitem">
+              <a href="index.html"
+                ><img
+                  src="./assets/logo/logo modificato bianco v2.png"
+                  alt="Logo di Carbolover azionabile per tornare alla home"
+                  class="logo-grande"
+              /></a>
+            </li>
+            <li role="menuitem"><a href="aboutus.html">CHI SIAMO</a></li>
+            <li role="menuitem"><a href="#" class="sottolinea-menu">JOIN US</a></li>
+          </ul>
+          <!-- NAVBAR PER MOBILE  -->
+          <div class="navbar__hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div id="logo-mobile">
+            <a href="index.html"
+              ><img
+                src="./assets/logo/logo modificato bianco v2.png"
+                alt=""
+                class="logo-grande"
+            /></a>
+          </div>
+        </div>
+      </nav>
+
+      <!-- COVER -->
+      <div class="cover text-white">
+        <div class="cover__bg cover__joinus"></div>
+        <div class="cover__content text-left">
+          <h1 class="titolo testo-grande">JOIN US</h1>
+        </div>
+      </div>
+    </header>
+
+    <div class="spacer-1"></div>
+    <main id="main" >
+      <div class="container-fluid">
+
+        <div class="row gx-3">
+            <div class="col-md-12 text-center testo-medio mb-5">
+                <p>Ci piace il <strong>gioco di squadra.</strong><br>
+                    Siamo un gruppo affiatato di giovani: <strong>attivi, entusiasti, presenti.</strong><br>
+                    Ci impegniamo per dare a tutti un posto a tavola.<br>
+                    Come una <strong>famiglia</strong>, lavoriamo per far sentire le persone a <strong>casa.</strong>
+                </p>
+            </div>
+            <div class="col-md-6 col-sm-12 mt-4 joinus__form" >
+                <h2 class="testo-rosso titolo testo-semigrande">ENTRA NEL TEAM CARBOLOVER</h2>
+
+                <p class="skip" id="descrizione_form_joinUs">In questo form potrai presentare la tua candidatura ad una posizione per CarboLover</p>
+                <form class="row g-5 mt-2" name="myForm" role="form" aria-label="Form per candidatura" aria-describedby="descrizione_form_joinUs" novalidate>
+                    <div class="col-md-6">
+                      <label for="nome" class="form__label">Nome:</label>
+                      <input type="text" class="form__input" id="nome" ng-model="nome" name="nome" required>
+                      <span ng-show="myForm.nome.$touched && myForm.nome.$invalid">
+                        <span class="testo-rosso" ng-show="myForm.nome.$error.required">Compila con il tuo nome</span>
+                      </span>
+                    </div>
+                    <div class="col-md-6">
+                      <label for="cognome" class="form__label">Cognome:</label>
+                      <input type="text" class= "form__input" id="cognome" ng-model="cognome"  name="cognome"  required>
+                      <span ng-show="myForm.cognome.$touched && myForm.cognome.$invalid">
+                        <span class="testo-rosso" ng-show="myForm.cognome.$error.required">Compila con il tuo cognome</span>
+                      </span>
+                      </div>
+                      
+                    <div class="col-12"> 
+                        <label for="email" class="form__label"> E-mail:</label>
+                        <input type="email" class="form__input" id="email" ng-model="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
+                        <span ng-show="myForm.email.$touched && myForm.email.$invalid">
+                            <span class="testo-rosso" ng-show="myForm.email.$error.required" >Inserisci una email</span>
+                            <span class="testo-rosso" ng-show="myForm.email.$error.pattern" >Inserisci una email valida</span>
+                          </span>
+
+                    </div>
+                    <div class="col-12">
+                      <label for="cellulare" class="form__label">Cellulare:</label>
+                      <input type="tel" class="form__input" id="cellulare" ng-model="cellulare" name="cellulare" ng-pattern="/^[0-9]{10}$/" required>
+                      <span ng-show="myForm.cellulare.$touched && myForm.cellulare.$invalid">
+                        <span class="testo-rosso" ng-show="myForm.cellulare.$error.required" >Inserisci un numero di telefono </span>
+                        <span class="testo-rosso" ng-show="myForm.cellulare.$error.pattern" >Inserisci un numero di telefono valido</span>
+                      </span>
+                    </div>                                                                 
+                    <div class="col-12" aria-live="polite">
+                        <button 
+                        ng-mouseEnter="animazioneBottoneEntrata()"
+                        ng-mouseleave="animazioneBottoneUscita()"
+                        class="bottone__form"
+                        ng-disabled="myForm.nome.$invalid || myForm.cognome.$invalid || myForm.email.$invalid ||  myForm.cellulare.$invalid" value="Invia"
+                        ng-click="effettuaPrenotazione()"
+                        >
+                        <img src="./assets/logo/invio.png" alt="" id="img_prenotazione">Invia </button>
+                        <p class="newsletterSuccesso">Grazie per esserti candidato {{nome}}!<br>Ti ricontatteremo al più presto</p>
+
+                    </div>
+                    
+                  </form>
+            </div>
+            <div class="col-md-6 col-sm-12 mt-4 joinus__img">
+                <img src="./assets/altro/carbodipendenti.jpeg" alt="immagine di dipendenti carbolover" class="img-res">
+            </div>
+        </div>
+
+      </div>
+    </main>
+
+    <div class="spacer-2"></div>
+    
+
+    <!-- FOOTER -->
+    <footer class="text-white">
+      <div class="container p-3">
+        <section class="">
+          <div
+            class="d-flex justify-content-between align-items-center fw-bold p-2"
+          >
+            <p class="footer__societa">CARBOLOVER SRL - COPYRIGHT 2022</p>
+            <div>
+              <img
+                src="./assets/logo/logo modificato bianco v2.png"
+                alt="logo carbolover"
+                class="logo-medio"
+              />
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <div class="footer__esame p-2">
+        <div class="container">
+          <p>
+            Sito creato da: Miriam Tariki e Daniele Marazzotta per il corso di
+            insegmento di Design di applicazioni web
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- CDN BOOTSTRAP -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Funzioni javascript -->
+    <script src="js/script.js"></script>
+
+    <!-- Funzioni Angular -->
+    <script src="js/angular.js"></script>
+    
+  </body>
+</html>

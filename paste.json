@@ -1,0 +1,74 @@
+{
+    "paste":[
+       {
+          "id":"0",
+          "nome":"Fusilloni cacio, pepe e funghi",
+          "ingredienti":"Fusilloni di sorgo, pecorino romano DOP, e funghi saltati.",
+          "prezzo":"10.50",
+          "note":"120g / 180g (aggiungendo 2€)",
+          "img": "assets/paste/fusilloni cacio e pepe.png",
+          "vendite": "23",
+          "colore": "rgb(150, 0, 24)"
+       },
+       {
+          "id":"1",
+          "nome":"Il Vegano",
+          "ingredienti":"Rigatoni M7, crema di funghi, e funghi saltati.",
+          "prezzo":"10.90",
+          "note":"120g / 180g (aggiungendo 2€)",
+          "img": "assets/paste/il vegano.png",
+          "vendite": "18",
+          "colore":"rgb(249, 57, 79)"
+       },
+       {
+          "id":"2",
+          "nome":"Paccheri tonno e pistacchi",
+          "ingredienti":"Paccheri di grani antichi, pesto di pistacchi, tonnetto del mediterraneo.",
+          "prezzo":"10.90",
+          "note":"120g / 180g (aggiungendo 2€)",
+          "img": "assets/paste/paccheri tonno e pistacchi.png",
+          "vendite": "45",
+          "colore":"rgb(200, 43, 60)"
+       },
+       {
+         "id":"3",
+         "nome":"Tagliatelle funghi e parmigiano",
+         "ingredienti":"Tagliatelle all'uovo, Crema di funghi, Funghi saltati, Parmigiano reggiano DOP",
+         "prezzo":"10.90",
+         "note":"120g / 180g (aggiungendo 2€)",
+         "img": "assets/paste/mobile_taglia_funghi.png",
+         "vendite": "63",
+         "colore":"rgb(89, 2, 12)"
+       },
+       {
+         "id":"4",
+         "nome":"Paccheri tricolore",
+         "ingredienti":"Paccheri di Grani Antichi, Salsa pomodori ciliegino, Stracciatella, Crema e granella di pistacchi BIO.",
+         "prezzo":"10.90",
+         "note":"120g / 180g (aggiungendo 2€)",
+         "img": "assets/paste/paccheri tricolore.png",
+         "vendite": "78",
+         "colore":"rgb(255, 0, 0)"
+       },
+       {
+         "id":"5",
+         "nome":"Trofie golose",
+         "ingredienti":"Trofie di Grani Antichi, Pesto genovese, pomodorini, parmigiano reggiano DOP.",
+         "prezzo":"9.60",
+         "note":"120g / 180g (aggiungendo 2€)",
+         "img": "assets/paste/mobile_trofie_golose.png ",
+         "vendite": "16",
+         "colore": "rgb(230, 21, 40)"
+       },
+       {
+         "id":"6",
+         "nome":"Tagliatelle con crema e semi di zucca",
+         "ingredienti":"Tagliatelle di Grani Antichi, crema di zucca, semi di zucca.",
+         "prezzo":"9.60",
+         "note":"120g / 180g (aggiungendo 2€)",
+         "img": "assets/paste/mobile_delicata_zenit.png",
+         "vendite": "17",
+         "colore": "rgb(209, 73, 86)"
+       } 
+    ]
+ }

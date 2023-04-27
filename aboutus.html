@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://getbootstrap.com/docs/5.2/assets/css/docs.css"
+      rel="stylesheet"
+    />
+
+    <!-- FAVICON -->
+    <link rel="icon" href="./assets/logo/favicon.png" />
+
+    <!-- FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Gothic&family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- ANGULAR e ANIMAZIONI -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+
+    <!-- JQUERY -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <title>Carbolover</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body ng-app="myApp" ng-controller="validazioneJoinus">
+    <header>
+      <a href="#main" class="skip">Skip to main content</a>
+      <nav class="navbar titolo testo-medio">
+        <div class="container-fluid">
+          <ul class="navbar__menu" role="menu">
+            <li role="menuitem"><a href="booking.html" >PRENOTA</a></li>
+            <li role="menuitem"><a href="menu.html">MENU</a></li>
+            <li id="logo" role="menuitem">
+              <a href="index.html"
+                ><img
+                  src="./assets/logo/logo modificato bianco v2.png"
+                  alt="Logo di Carbolover azionabile per tornare alla home"
+                  class="logo-grande"
+              /></a>
+            </li>
+            <li role="menuitem"><a href="#" class="sottolinea-menu">CHI SIAMO</a></li>
+            <li role="menuitem"><a href="joinus.html" >JOIN US</a></li>
+          </ul>
+          <!-- NAVBAR PER MOBILE  -->
+          <div class="navbar__hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div id="logo-mobile">
+            <a href="index.html"
+              ><img
+                src="./assets/logo/logo modificato bianco v2.png"
+                alt=""
+                class="logo-grande"
+            /></a>
+          </div>
+        </div>
+      </nav>
+
+      <!-- COVER -->
+      <div class="cover text-white">
+        <div class="cover__bg cover__aboutus"></div>
+        <div class="cover__content">
+          <h1 class="titolo testo-grande">CHI SIAMO</h1>
+        </div>
+      </div>
+    </header>
+
+    <div class="spacer-1"></div>
+    <main id="main" >
+      <div class="container-fluid chi-siamo__max-width">
+
+        <div class="row ">
+            <div class="col-md-6 col-sm-12 mt-4 testo-paragrafo p-4" >
+                <h2 class="testo-rosso titolo testo-semigrande">NASCITA</h2>
+                
+                <p class="mt-3"> <strong> CarboLover nasce nel 2022 </strong> dall’idea di Miriam e Daniele. <br>Abbiamo sempre creduto nella
+                     realizzazione di un ristorante che potesse essere il punto di ritrovo per tutti <strong> gli amanti della pasta.</strong></p>
+
+                <p class="mt-3">Dalla nostra nascita abbiamo sempre tentato di <strong> dare qualcosa in più </strong>rispetto ai nostri competitor, avevamo bene 
+                    in mente sin dall’inizio di voler creare <strong> un ambiente giovane e dinamico </strong> dove potesse esserci spazio per 
+                    <strong> sperimentazioni e giocosità</strong>, senza però mai togliere spazio alla <strong>vera protagonista: la pasta.</strong></p>
+            </div>
+            <div class="col-md-6 col-sm-12 mt-4">
+                <img src="./assets/altro/pasta-esempio.jpg" alt="pasta" class="img-res" >
+            </div>
+        </div>
+      </div>
+      <div class="spacer-1"></div>
+
+      <div class="cover text-white">
+        <div class="cover__bg cover__aboutus-pasta"></div>
+        <div class="cover__content text-center">
+            <h1 class="titolo testo-semigrande ">IDENTITA'</h1>
+            <p class="testo-paragrafo mt-5">La pasta è la nostra identità.<br>
+                Siamo nati condividendo la nostra passione 
+                per la pasta e continueremo sempre a farlo.
+                </p>
+
+                <p class="testo-paragrafo mt-3"><span class="titolo">CARBOLOVER</span> crede fermamente 
+                    nell’unione fra tradizione e innovazione, 
+                    e cerca ogni giorno di metterla in campo.</p>
+          </div>
+      </div>
+
+    </main>
+
+    <div class="spacer-1"></div>
+    
+    <div class="container-fluid">
+        <div class="row ">
+            <div class="col-md-12 chi-siamo__testo-iniziale px-5">
+                <img src="assets/logo/logo modificato.svg" alt="logo" class="logo-grande"> <p> &nbsp; è questo</p>
+
+            </div>
+        
+            <div class="spacer-1"></div>
+            <div class="col-md-12 chi-siamo__paste d-flex justify-content-center">
+                <img src="assets/paste/zuccone.png" alt="zuccone"  class="p-1">
+                <img src="assets/paste/paccheri tricolore.png" alt="paccheri tricolore" class="p-1" >
+                <img src="assets/paste/il vegano.png" alt="il vegano"  class="p-1">
+                <img src="assets/paste/paccheri tonno e pistacchi.png" alt="paccheri tonno e pistacchi" class="p-1 pasta-mobile">
+                <img src="assets/paste/fusilloni cacio e pepe.png" alt="fusilloni cacio e pepe" class="p-1 pasta-mobile">
+            </div>
+            <div class="spacer-1"></div>
+            <div class="col-md-12 d-flex justify-content-end px-5">
+            <p>semplicemente, pasta.</p>
+
+            </div>
+        </div>
+    </div>
+    <div class="spacer-2"></div>
+
+
+    <!-- FOOTER -->
+    <footer class="text-white">
+      <div class="container p-3">
+        <section class="">
+          <div
+            class="d-flex justify-content-between align-items-center fw-bold p-2"
+          >
+            <p class="footer__societa">CARBOLOVER SRL - COPYRIGHT 2022</p>
+            <div>
+              <img
+                src="./assets/logo/logo modificato bianco v2.png"
+                alt=""
+                class="logo-medio"
+              />
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <div class="footer__esame p-2">
+        <div class="container">
+          <p>
+            Sito creato da: Miriam Tariki e Daniele Marazzotta per il corso di
+            insegmento di Design di applicazioni web
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- CDN BOOTSTRAP -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Funzioni javascript -->
+    <script src="js/script.js"></script>
+
+    <!-- Funzioni Angular -->
+    <script src="js/angular.js"></script>
+    
+  </body>
+</html>

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://getbootstrap.com/docs/5.2/assets/css/docs.css"
+      rel="stylesheet"
+    />
+
+    <!-- FAVICON -->
+    <link rel="icon" href="./assets/logo/favicon.png" />
+
+    <!-- FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Gothic&family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- ANGULAR -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+
+    <!-- JQUERY -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <title>Carbolover</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <a href="#main" class="skip">Skip to main content</a>
+      <nav class="navbar titolo testo-medio">
+        <div class="container-fluid">
+          <ul class="navbar__menu" role="menu">
+            <li role="menuitem"><a href="booking.html"> PRENOTA </a></li>
+            <li role="menuitem"><a href="menu.html"> MENU </a></li>
+            <li id="logo" role="menuitem">
+              <a href="#"
+                ><img
+                  src="./assets/logo/logo modificato bianco v2.png"
+                  alt="Logo di Carbolover azionabile per tornare alla home"
+                  class="logo-grande"
+              /></a>
+            </li>
+            <li role="menuitem"><a href="aboutus.html">CHI SIAMO</a></li>
+            <li role="menuitem"><a href="joinus.html">JOIN US</a></li>
+          </ul>
+          <!-- NAVBAR PER MOBILE  -->
+          <div class="navbar__hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div id="logo-mobile">
+            <a href="#"
+              ><img
+                src="./assets/logo/logo modificato bianco v2.png"
+                alt=""
+                class="logo-grande"
+            /></a>
+          </div>
+        </div>
+      </nav>
+
+      <!-- COVER -->
+      <div class="cover cover__large text-white">
+        <div class="cover__bg cover__index"></div>
+        <div class="cover__content text-left">
+          <h1 class="titolo testo-grande sottolinea-rosso">TEAM #CARBOLOVER?</h1>
+          <p class="titolo cover__content-index">Fatti tentare dai carboidrati</p>
+          <button class="cta titolo"><a href="booking.html">PRENOTA ORA</a> </button>
+        </div>
+      </div>
+    </header>
+
+    <main id="main" >
+      <div class="container-fluid">
+
+        <div class="row" role="region" aria-label="programma fedeltà" id="region-carbofamily"> <!-- Sezione carbofamily-->
+          <div class="home__region col-md-6 col-sm-12 d-flex flex-column align-items-start testo-paragrafo info-home"> <!-- info carbofam -->
+            <h2 class="titolo testo-grande testo-rosso sottolinea-rosso text-center mt-4">CARBOFAMILY</h2>
+
+            <p class="mt-5">Entrando a far parte della <span class="testo-rosso testo-bold">FAMIGLIA CARBOLOVER</span> potrai accedere a dei vantaggi esclusivi!</p>
+            
+            <ul class="lista-cuori mt-5">
+              <li class="mt-2">Piatti in omaggio</li>
+              <li class="mt-2">Regalo di benvenuto</li>
+              <li class="mt-2">Tantissimi giochi a premi</li>
+            </ul>
+
+            <button class="cta titolo mt-5"> <a href="carbofamily.html"> SCOPRI CARBOFAMILY</a></button> 
+
+          </div>
+
+
+          <div class="home__region col-md-6 col-sm-12 bg-red d-flex justify-content-center align-items-center"><!-- foto mockup -->
+            <img src="./assets/altro/mockup-home.png" id="index__img-mockup" class="home__mockup animazione-right" alt="schermata dell'app di carbolover">
+          </div>
+        </div>
+
+        <div class="row" role="region" aria-label="ristorante" ><!-- Sezione ristorante -->
+          <div class="home__region col-md-6 col-sm-12 p-0 home__ristorante"><!-- foto ristorante -->
+          </div>
+
+          <div class="home__region col-md-6 col-sm-12 info-home  testo-paragrafo"><!-- info risto -->
+            <h2 class="titolo testo-grande testo-rosso sottolinea-rosso text-center mt-4">RISTORANTE</h2>
+
+            <p class="my-5">Vieni a trovarci nel nostro ristorante a <strong>Torino in Piazza Carlo Emanuele II, 17.</strong></p>
+            <div class="home__map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2817.967033977632!2d7.683491829082064!3d45.06617981224399!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47886d65a3f889f3%3A0x9e0e05ec7ef81400!2sP.za%20Carlo%20Emanuele%20II%2C%2017%2C%2010123%20Torino%20TO!5e0!3m2!1sit!2sit!4v1671402517259!5m2!1sit!2sit" width="100%" height="30%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <p class="mt-5">Siamo aperti <strong>tutti i giorni:</strong> <br> <strong>a pranzo</strong> dalle 11.30 alle 14.40<br><strong>a cena</strong> dalle 19.30 alle 23.30</p>
+          </div>
+        </div>
+
+      </div>
+    </main>
+
+    <div class="container-fluid bg-red">
+      <div class="row spacer-red"></div> <!-- ZONA ROSSA -->
+
+      <div class="row d-flex justify-content-around">
+        <div class="col-md-4 col-sm-12 text-white p-5"> <!-- TESTI SULLA NEWSLETTER -->
+          <h3 class="titolo testo-titolo-medio mb-4">Iscriviti alla newsletter</h3>
+          <p class="testo-paragrafo">Otterrai un <strong>codice sconto del 15%</strong> sul tuo primo scontrino</p>
+        </div>
+        <div class="col-md-6 col-sm-12 newsletter-container"> <!-- FORM DELLA NEWSLETTER -->
+          <div class="newsletter-element p-5" aria-live="polite">
+            <p class="skip" id="descrizione_form_newsletter">In questo form potrai inserire la tua mail per poter iscriverti alla newsletter e ricevere dei vantaggi</p>  
+            <form action="" id="newsletterForm" role="form" aria-describedby="descrizione_form_newsletter">
+              <label for="input-email" class="form__label">Indirizzo email</label><br>
+              <input type="email" id="input-email" class="form__input mb-3" name="email" required>
+              <span class="newsletterErrore">Questa mail non è valida</span>
+              <fieldset>
+                <legend class="testo-bold testo-paragrafo mb-3">Gestisci le tue preferenze</legend>
+
+                <input type="checkbox" id="preferenza1" name="preferenze" >
+                <label for="preferenza1"  class="testo-paragrafo">Sconti e promozioni</label><br>
+
+                <input type="checkbox" id="preferenza2" name="preferenze">
+                <label for="preferenza2" id="label-preferenza2" class="testo-paragrafo mt-2">News sulle novità</label>
+              </fieldset>
+              <button class="bottone__form" ><img src="./assets/logo/mail.png" alt="">Iscrivimi</button>
+              <p class="newsletterSuccesso">Ti sei iscritto alla newsletter con successo</p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="spacer-newsletter"></div>
+
+    <!-- FOOTER -->
+    <footer class="text-white">
+      <div class="container p-3">
+        <section class="">
+          <div
+            class="d-flex justify-content-between align-items-center fw-bold p-2"
+          >
+            <p class="footer__societa">CARBOLOVER SRL - COPYRIGHT 2022</p>
+            <div>
+              <img
+                src="./assets/logo/logo modificato bianco v2.png"
+                alt=""
+                class="logo-medio"
+              />
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <div class="footer__esame p-2">
+        <div class="container">
+          <p>
+            Sito creato da: Miriam Tariki e Daniele Marazzotta per il corso di
+            insegmento di Design di applicazioni web
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- CDN BOOTSTRAP -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Funzioni javascript -->
+    <script src="js/script.js"></script>
+    <script src="js/newsletterValidator.js"></script>
+
+    <!-- Funzioni Angular -->
+    <script src="js/angular.js"></script>
+  </body>
+</html>
